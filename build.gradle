@@ -25,7 +25,7 @@ test {
 
 graalvmNative {
     binaries {
-        main {
+        test {
             verbose = true
             buildArgs.add('--report-unsupported-elements-at-runtime')
             buildArgs.add('--native-image-info')
@@ -34,7 +34,7 @@ graalvmNative {
     agent {
         defaultMode = "standard"
         modes {
-            standard{
+            standard {
             }
             conditional {
                 userCodeFilterPath = "user-code-filter.json"
